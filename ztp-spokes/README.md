@@ -43,10 +43,6 @@ An example of the git repo structure:
 - Policy will be copied from template to target namespace and set as 'inform'
 - Create a ClusterGroupUpgrade so that the policy will be enforced to upgrade OCP cluster
 
-## Upgrade a operator
-
-TBD
-
 ## Cleanup
 
 To delete a site:
