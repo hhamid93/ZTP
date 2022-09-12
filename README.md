@@ -21,7 +21,5 @@ Following is a high-level overview of using ZTP to provision the spoke clusters.
 - Create ClusterGroupUpgrade CRs, this will enforce the 'inform' policies on demand.
 
 ### Detailed Information
-
-- [Set up OCP virtual cluster](./ocp-virtual-cluster/README.md)
 - [Set up ZTP Hub](./ztp-hub/README.md)
 - [Set up ZTP Spokes](./ztp-spokes/README.md)
