@@ -70,19 +70,4 @@ In order to make sure ArgoCD can access to the git repo (github in this case), w
     ```shell
     cat /root/.ssh/id_ed25519
     ```
-  
-## RHACM Console
 
-https://multicloud-console.apps.hub.outbound.vz.bos2.lab/
-
-username: kubeadmin
-
-password: $$$
-
-## ArgoCD Console
-
-https://openshift-gitops-server-openshift-gitops.apps.hub.outbound.vz.bos2.lab
-
-username: admin
-
-password: $$$
