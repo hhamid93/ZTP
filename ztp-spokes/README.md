@@ -5,22 +5,6 @@ A repo to provision ZTP spoke clusters
 An example of the git repo structure:
 ```shell
 [root@hub-helper ztp-spokes]# tree .
-.
-├── cluster-group-upgrade
-│   └── sno147.yaml
-├── policies
-│   ├── cluster
-│   │   └── sno-example.yaml
-│   ├── common
-│   │   ├── 4.10.yaml
-│   │   └── 4.9.yaml
-│   ├── group
-│   │   └── vdu.yaml
-│   ├── kustomization.yaml
-│   ├── ns.yaml
-│   └── site
-│       ├── kvm.yaml
-│       └── zt.yaml
 ├── prereqs
 │   └── snoexample.yaml
 ├── README.md
@@ -29,12 +13,6 @@ An example of the git repo structure:
     └── snoexample.yaml
 ```
 - [sites](./sites) to save SiteConfig CRs for all managed clusters
-- [policies](./policies) to save PolicyGenTemplate CRs for the managed clusters
-  - common: PolicyGenTemplate CRs which shall be applied on all clusters
-  - group: PolicyGenTemplate CRs which shall be applied on a group of the clusters, such as vDU
-  - site: PolicyGenTemplate CRs which shall be applied on a particular site
-  - cluster: PolicyGenTemplate CRs which shall be applied on a particular cluster
-- [cluster-group-upgrade](./cluster-group-upgrade) to save ClusterGroupUpgrade CRs for the managed clusters
 - [prereqs](./prereqs) to save the BMC secret and pull secret for the managed clusters
 
 ## Upgrade a cluster
