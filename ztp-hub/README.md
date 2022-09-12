@@ -1,4 +1,4 @@
-Repo to setup ZTP hub instance
+This repo will setup ZTP hub instance
 
 ## Assisted Installer Service
 
