@@ -15,7 +15,7 @@ spec:
   project: policy-app-project
   source:
     path: ztp-spokes/policies
-    repoURL: git@github.com:borball/outbound-bos2-ztp.git
+    repoURL: git@github.com:hhamid93/ZTP.git
     targetRevision: master
   syncPolicy:
     automated:
