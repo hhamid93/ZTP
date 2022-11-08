@@ -1,0 +1,64 @@
+---
+apiVersion: ran.openshift.io/v1
+kind: SiteConfig
+metadata:
+  name: "rna4"
+  namespace: "rna4"
+spec:
+  baseDomain: "cloud.lab.eng.bos.redhat.com"
+  pullSecretRef:
+    name: "assisted-deployment-pull-secret"
+  clusterImageSetNameRef: "openshift-v4.10.16"
+  sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDD1I3MADKDke7CWKJR57uTuq8C3+PU+tsUfmJLj/hK975RwJSgKRrweIQBjDMb8th0y1YCGWgKRyIM4ApNGPkaaQQfP8/msYXF8RSMTwTLKiB2PuS5njMyamnUFMNAQ0uZm+7xNG0gmRibCbL1JyIyMN3C9+NjkEnSOu2ijJfeXroDnGcqVO1S90+NuknrxCvxaJNcbi2gkYAkFLkSbtA83+xBsU9cFwNVII8BgAnOmuW2qGLANDX4eVn2ZUaydiLFLM+XrWxJM0fldWY9gn6+azhHrIqx5Qtin3UsXAlhE9YA9PY9m4ilHWdr4fSLv5e+m+6NT4DoXTh7tXi+toZUDoTjEfGZmX9KKM7fNQvw7dXYaGEsChW937WhIihB5iF2HkAnXLoPR4nxu1uNY/Dpg5cboeeI4tOMxUDD7HcBF8iCLANLyRUAqL5xZBF5mgjy2DKNfzWaRW59tR18Z5JwBo/t6sQWONeh7wlS5whm2Gp/+6KCL13DnUFt2LmTYIE= root@bastion.rna3.cloud.lab.eng.bos.redhat.com"
+  clusters:
+    - clusterName: "rna4"
+      clusterLabels:
+        group-vdu: ""
+        common-49: true
+        sites : "rna4"
+      networkType: "OVNKubernetes"
+      clusterNetwork:
+        - cidr: "10.128.0.0/14"
+          hostPrefix: 23
+      serviceNetwork:
+        - "172.30.0.0/16"
+      machineNetwork:
+        - cidr: "10.19.6.0/24"
+      additionalNTPSources:
+        - 10.18.100.10
+      nodes:
+        - hostName: "metal1"
+          role: master
+          bmcAddress: "redfish-virtualmedia://10.19.143.120/redfish/v1/Systems/System.Embedded.1/"
+          bmcCredentialsName:
+            name: "bmh-secret"
+          bootMACAddress: "B8:59:9F:B1:11:C5"
+          bootMode: "UEFI"
+          rootDeviceHints:
+            deviceName: "/dev/nvme0n1"
+          cpuset: "0-1,30-33,62-63"
+          nodeNetwork:
+            config:
+              interfaces:
+                - name: eno2
+                  type: ethernet
+                  state: up
+                  ipv4:
+                    enabled: true
+                    address:
+                      - ip: 10.19.6.21
+                        prefix-length: 24
+                  ipv6:
+                    enabled: false
+              dns-resolver:
+                config:
+                  search:
+                    - 10.19.6.21
+              routes:
+                config:
+                  - destination: 0.0.0.0/0
+                    next-hop-interface: eno2
+                    next-hop-address: 10.19.6.254
+            interfaces:
+              - name: "eno2"
+                macAddress: "B8:59:9F:B1:11:C5"
