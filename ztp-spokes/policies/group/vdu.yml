@@ -1,0 +1,17 @@
+---
+apiVersion: ran.openshift.io/v1
+kind: PolicyGenTemplate
+metadata:
+  # The name will be used to generate the placementBinding and placementRule names as {name}-placementBinding and {name}-placementRule
+  name: "vdu"
+  namespace: "ztp-policy-group"
+spec:
+  bindingRules:
+    group-vdu: ""
+  mcp: "master"
+  remediationAction: inform
+  sourceFiles:
+    - fileName: ConsoleOperatorDisable.yaml
+      policyName: "config-policy"
+    - fileName: DisableSnoNetworkDiag.yaml
+      policyName: "config-policy"
