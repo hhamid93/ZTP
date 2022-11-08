@@ -4,7 +4,7 @@ A repo to provision ZTP spoke clusters
 
 An example of the git repo structure:
 ```shell
-[root@hub-helper ztp-spokes]# tree .
+[root@hub-helper ztp-spokes]
 ├── prereqs
 │   └── snoexample.yaml
 ├── README.md
