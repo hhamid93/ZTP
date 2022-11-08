@@ -16,7 +16,7 @@ spec:
   source:
     path: ztp-spokes/sites
     repoURL: git@github.com:hhamid93/ZTP.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
