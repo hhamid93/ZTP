@@ -8,9 +8,9 @@ generators:
 ## This group policy is for all single-node deployments:
 - group/vdu.yaml
 ## This group validator policy is for all single-node deployments:
-- site/rna4.yaml
+- site/rna4.yml
 ## These are examples that should be replicated for every individual site:
-- cluster/rna4.yaml
+- cluster/rna4.yml
 
 resources:
 - ns.yaml
