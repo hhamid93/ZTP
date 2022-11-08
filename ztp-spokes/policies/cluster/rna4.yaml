@@ -1,0 +1,12 @@
+---
+apiVersion: ran.openshift.io/v1
+kind: PolicyGenTemplate
+metadata:
+  name: "rna4"
+  namespace: "ztp-policy-cluster"
+spec:
+  bindingRules:
+    name: "rna4"
+  mcp: "master"
+  remediationAction: inform
+  sourceFiles: []
