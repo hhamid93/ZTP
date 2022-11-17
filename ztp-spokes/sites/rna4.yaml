@@ -49,6 +49,16 @@ spec:
                       - ip: 10.19.6.21
                         prefix-length: 24
                   ipv6:
+                    enabled: false   
+                - name: eno1
+                  type: ethernet
+                  state: up
+                  ipv4:
+                    address:
+                    - ip: 10.10.10.10
+                      prefix-length: 24
+                    enabled: true   
+                  ipv6:
                     enabled: false
               dns-resolver:
                 config:
@@ -62,3 +72,5 @@ spec:
             interfaces:
               - name: "eno2"
                 macAddress: "B8:59:9F:B1:11:C5"
+              - name: "eno2"
+                macAddress: "B8:59:9F:B1:11:C4"
