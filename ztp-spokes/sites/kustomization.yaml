@@ -3,4 +3,3 @@ kind: Kustomization
 
 generators:
 - rna4.yaml
-- rna4-prereq.yaml
