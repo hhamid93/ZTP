@@ -8,7 +8,7 @@ spec:
   baseDomain: "cloud.lab.eng.bos.redhat.com"
   pullSecretRef:
     name: "assisted-deployment-pull-secret"
-  clusterImageSetNameRef: "openshift-v4.10.16"
+  clusterImageSetNameRef: "img4.10.16-x86-64-appsub"
   sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCm8aBT4vr7PRBv0P33lCbCWNo6tA6DsqdjgfezoVzIp1L47LQhQEqg3/zh6cj4V8tAl3HXVZM3VfUQOHKyUC0FyJ5AQqCDhwe6mi/WzSgECs1TbjkO67pQN0udC22M3PnTNmjS/hDIJ0VDFZk65WVTIMZOExVzhZyyWZdCoSami/etLC7Q6PkjUsH/vmfCDaDFuUj8ZlzaSIR/BxOkaGWHd6UWrlqr0yHiWpZ1zcHqdXr3nSA415+g79a5hWjM7sdXe3xIfxy8xarK1KyyiYK8n3V0mfrDhn0IqLgYldbniBOF8dvYA3n9iF0mnzc+ClZnAz8ZF3KjgkafZFt4ApeRSNEilHoAssPfdpUv5hWajPP/PiGvvgiFU3FsjRdX88q9xtRF4ymjxh6cplqHtdM0W5Uu5YEYModQGafTAORWw0DxD6x2MozURnJ1DQsrQVRdu4KMN2wvZY1REampsqrvP4GrAIjL6OhSX8QfGX3QtBV/YLfbRJenVIE9T0DccL8= core@metal3"
   clusters:
     - clusterName: "rna4"
