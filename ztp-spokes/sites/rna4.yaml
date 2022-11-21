@@ -72,5 +72,5 @@ spec:
             interfaces:
               - name: "eno2"
                 macAddress: "B8:59:9F:B1:11:C5"
-              - name: "eno2"
+              - name: "eno1"
                 macAddress: "B8:59:9F:B1:11:C4"
