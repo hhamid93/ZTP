@@ -9,7 +9,7 @@ spec:
   pullSecretRef:
     name: "assisted-deployment-pull-secret"
   clusterImageSetNameRef: "img4.10.16-x86-64-appsub"
-  sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIUtoBu9uTYH1s1f8UD8BrdTSrgpf7n80JQwveG7O0nrtG0x9dP/iOKQwRiyZcT09r2LX1X9YzFw2nx9I6q/zUnf6MCKIwGZ23yzyc9VQf0na6WNlfKq/fiUudIeOOJQOQ+9WAkrJCAu5nn0WmcF0JbjbMdvC++0XmcbawW2BUfc7CAGiqp3u7OXWIOv3QjNfR38S5jZfmjla9LvB5/HhVMvmh+/VU+SRBhMJ9jmIpKCr07K2WTPByIoF7p9/mKiTJ2ZuoJIEIe/DsYDEFpD+Uctxe51AlOMM0HRltCLs2roEt0DhqcrXUDEc/xEWo4D/H/P0Dox6ZInXEtLeekLVb2mDWpwcpzIE6KEZ+FrEkmFbAKSBVAne6LyubdX/pexEub82z/9agMgj0egofgoxyxku9IZ9aciXS/ApqmcnAJ4MOOFBD0cZ6sFMP5rUR0UiUWmKopoV5DFRRCk0ZlzX8ATUVdPd79AEdQ9Kq1xT1PbRvVWwiwPPS8Q6cy8XrhvU= core@metal3"
+  sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQlnVX+FC/f9LLXz6/CWFeGD9MY0ou6g+PpgFetmtkG762TV0uCKk+3Kgy+XrhfZGSYdsACLhNwyr75TR+x3Y3sJTnMpHNmArMEdQzg7k/vqFZoQpLrENrS0mOjCbwwbwlofWmJleLVWyyH/Ln6c4ys/PjyVTLAFmEMmgGGavNnYd0fqlS8xyKTxR+fIk2VEHbS/ZsJNP/BOLS3ossfd6MGVjGvS59VoZ69fcU8lfvNKowj766VbFJvqs8tQCM5nyc9fSB6p54/isRwvPR0pAQVIxdPJszISsYhnprHjzqDiJ/jlsY0V3TyX5Sk+/qDSiD0+fCGNUTAM1ZTndXzeaN2DRnk4ZJYessSWZjhEXqCUDYtS3j+CSzfN57svZYNhgxDTroGDVc7Ryy5IbdNGK8ycYqY3b7nJn++I66GU1XRqB0qB0h04KHpcm4O2/mIO55CcYDj8eNFe4AL0g2KQK/cMsPaCIpoGDuVsQooK94odX28PceTERW4ZcO4LgpHPU= core@metal3"
   clusters:
     - clusterName: "rna4"
       clusterLabels:
