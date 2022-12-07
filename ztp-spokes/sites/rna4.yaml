@@ -49,17 +49,10 @@ spec:
                       - ip: 10.19.6.20
                         prefix-length: 24
                   ipv6:
-                    enabled: false   
-                - name: eno1
+                    enabled: false
+                - name: eno2
                   type: ethernet
-                  state: true
-                  ipv4:
-                    enabled: true
-                    address:
-                      - ip: 10.10.10.10
-                        prefix-length: 24
-                  ipv6:
-                    enabled: false 
+                  state: down
               dns-resolver:
                 config:
                   search:
@@ -72,5 +65,3 @@ spec:
             interfaces:
               - name: "eno2"
                 macAddress: "B8:59:9F:B1:11:C5"
-              - name: "eno1"
-                macAddress: "B8:59:9F:B1:11:C4"
