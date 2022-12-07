@@ -52,14 +52,7 @@ spec:
                     enabled: false   
                 - name: eno1
                   type: ethernet
-                  state: up
-                  ipv4:
-                    address:
-                    - ip: 10.10.10.10
-                      prefix-length: 24
-                    enabled: true   
-                  ipv6:
-                    enabled: false
+                  state: down
               dns-resolver:
                 config:
                   search:
