@@ -53,6 +53,10 @@ spec:
                 - name: eno1
                   type: ethernet
                   state: down
+                  ipv4:
+                    enabled: false
+                  ipv6:
+                    enabled: false
               dns-resolver:
                 config:
                   search:
