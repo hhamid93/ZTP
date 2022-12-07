@@ -52,7 +52,7 @@ spec:
                     enabled: false   
                 - name: eno1
                   type: ethernet
-                  state: down
+                  state: true
                   ipv4:
                     enabled: true
                     address:
