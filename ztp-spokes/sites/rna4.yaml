@@ -54,9 +54,12 @@ spec:
                   type: ethernet
                   state: down
                   ipv4:
-                    enabled: false
+                    enabled: true
+                    address:
+                      - ip: 10.10.10.10
+                        prefix-length: 32
                   ipv6:
-                    enabled: false
+                    enabled: false 
               dns-resolver:
                 config:
                   search:
