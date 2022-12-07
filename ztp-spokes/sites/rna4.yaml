@@ -50,7 +50,7 @@ spec:
                         prefix-length: 24
                   ipv6:
                     enabled: false
-                - name: eno2
+                - name: eno1
                   type: ethernet
                   state: down
               dns-resolver:
