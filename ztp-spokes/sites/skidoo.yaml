@@ -14,8 +14,7 @@ spec:
   clusters:
     - clusterName: "skidoo"
       clusterLabels:
-        group-vdu: ""
-        common-49: true
+        common-du-vse414: "true"
         sites: "r740xls"
       networkType: "OVNKubernetes"
       clusterNetwork:
