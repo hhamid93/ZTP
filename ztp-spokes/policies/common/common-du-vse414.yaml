@@ -59,7 +59,7 @@ spec:
         name: redhat-operators
       spec:
         displayName: Telco 4.14 RH
-        image: quay.io/redhat-partner-solutions/prega/redhat-operator-index:v4.14
+        image: quay.io/prega/redhat-operator-index:v4.14
         updateStrategy:
             registryPoll:
                 interval: 10m0s
@@ -70,10 +70,10 @@ spec:
         - mirrors:
           - brew.registry.redhat.io
           source: registry-proxy.engineering.redhat.com
-        - mirrors:
-          - brew.registry.redhat.io/openshift4
-          - quay.io/redhat-partner-solutions/prega/openshift4
-          source: registry.redhat.io/openshift4
+        #- mirrors:
+        #  - brew.registry.redhat.io/openshift4
+        #  - quay.io/redhat-partner-solutions/prega/openshift4
+        #  source: registry.redhat.io/openshift4
         - mirrors:
           - brew.registry.redhat.io/openshift-logging
           source: registry.redhat.io/openshift-logging
