@@ -3,7 +3,7 @@ apiVersion: ran.openshift.io/v1
 kind: PolicyGenTemplate
 metadata:
   name: "common-du-vse414"
-  namespace: "ztp-common"
+  namespace: "ztp-policy-common"
 spec:
   bindingRules:
     # These policies will correspond to all clusters with this label:
