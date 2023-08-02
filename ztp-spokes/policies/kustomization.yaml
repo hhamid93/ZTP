@@ -3,13 +3,13 @@ kind: Kustomization
 
 generators:
 # This is common to all RAN deployments
-- common/4.9.yaml
+- common/common-du-vse414.yaml
 ## This group policy is for all single-node deployments:
-- group/vdu.yaml
+#- group/vdu.yaml
 ## This group validator policy is for all single-node deployments:
-- site/rna4.yaml
+#- site/rna4.yaml
 ## These are examples that should be replicated for every individual site:
-- cluster/rna4.yaml
+#- cluster/rna4.yaml
 
 resources:
 - ns.yaml
