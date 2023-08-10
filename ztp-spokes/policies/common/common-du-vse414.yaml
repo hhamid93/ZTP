@@ -59,7 +59,7 @@ spec:
         name: redhat-operators
       spec:
         displayName: Telco 4.14 RH
-        image: quay.io/prega/redhat-operator-index:v4.14
+        image: altiostar-registry.cars.lab:5000/prega/redhat-operator-index:v4.14
         updateStrategy:
             registryPoll:
                 interval: 10m0s
@@ -68,15 +68,14 @@ spec:
       spec:
         repositoryDigestMirrors:
         - mirrors:
-          - brew.registry.redhat.io
-          source: registry-proxy.engineering.redhat.com
-        #- mirrors:
-        #  - brew.registry.redhat.io/openshift4
-        #  - quay.io/redhat-partner-solutions/prega/openshift4
-        #  source: registry.redhat.io/openshift4
+          - altiostar-registry.cars.lab:5000/openshift-logging
+          source: brew.registry.redhat.io/openshift-logging
         - mirrors:
-          - brew.registry.redhat.io/openshift-logging
-          source: registry.redhat.io/openshift-logging
+          - altiostar-registry.cars.lab:5000/rh-osbs
+          source: registry-proxy.engineering.redhat.com/rh-osbs 
         - mirrors:
-          - quay.io/redhat-partner-solutions/prega/intel
-          source: registry.connect.redhat.com/intel
+          - altiostar-registry.cars.lab:5000/intel
+          source: docker.io/intel 
+        - mirrors:
+          - altiostar-registry.cars.lab:5000/openshift4
+          source: brew.registry.redhat.io/openshift4
