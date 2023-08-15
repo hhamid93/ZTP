@@ -68,12 +68,6 @@ spec:
       spec:
           repositoryDigestMirrors:
             - mirrors:
-              - altiostar-registry.cars.lab:5000/ocp-release
-              source: quay.io/openshift-release-dev/ocp-release
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/ocp-release
-              source: quay.io/openshift-release-dev/ocp-v4.0-art-dev
-            - mirrors:
               - altiostar-registry.cars.lab:5000/openshift4
               source: registry.redhat.io/openshift4
             - mirrors:
@@ -86,11 +80,8 @@ spec:
               - altiostar-registry.cars.lab:5000/intel
               source: docker.io/intel      
             - mirrors:
-              - altiostar-registry.cars.lab:5000/prega
-              source: quay.io/prega  
+              - altiostar-registry.cars.lab:5000/prega/redhat-operator-index
+              source: quay.io/prega/redhat-operator-index  
             - mirrors:
-              - altiostar-registry.cars.lab:5000/redhat
-              source: registry.redhat.io/redhat
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/multicluster-engine/multicluster-engine
-              source: registry.redhat.io/multicluster-engine
+              - altiostar-registry.cars.lab:5000/redhat/certified-operator-index
+              source: registry.redhat.io/redhat/certified-operator-index
