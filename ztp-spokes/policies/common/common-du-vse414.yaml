@@ -80,8 +80,5 @@ spec:
               - altiostar-registry.cars.lab:5000/intel
               source: registry.connect.redhat.com/intel      
             - mirrors:
-              - altiostar-registry.cars.lab:5000/prega/redhat-operator-index
-              source: registry.redhat.io/redhat/redhat-operator-index
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/redhat/certified-operator-index
-              source: registry.redhat.io/redhat/certified-operator-index
+              - altiostar-registry.cars.lab:5000/redhat
+              source: registry.redhat.io/redhat
