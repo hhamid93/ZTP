@@ -63,22 +63,22 @@ spec:
         updateStrategy:
             registryPoll:
                 interval: 10m0s
-    - fileName: DisconnectedICSP.yaml
-      policyName: "config-policy"
-      spec:
-          repositoryDigestMirrors:
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/openshift4
-              source: registry.redhat.io/openshift4
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/openshift-logging
-              source: registry.redhat.io/openshift-logging
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/rh-osbs
-              source: registry-proxy.engineering.redhat.com/rh-osbs    
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/intel
-              source: registry.connect.redhat.com/intel      
-            - mirrors:
-              - altiostar-registry.cars.lab:5000/redhat
-              source: registry.redhat.io/redhat
+#    - fileName: DisconnectedICSP.yaml
+#      policyName: "config-policy"
+#      spec:
+#          repositoryDigestMirrors:
+#            - mirrors:
+#              - altiostar-registry.cars.lab:5000/openshift4
+#              source: registry.redhat.io/openshift4
+#            - mirrors:
+#              - altiostar-registry.cars.lab:5000/openshift-logging
+#              source: registry.redhat.io/openshift-logging
+#            - mirrors:
+#              - altiostar-registry.cars.lab:5000/rh-osbs
+#              source: registry-proxy.engineering.redhat.com/rh-osbs    
+#            - mirrors:
+#              - altiostar-registry.cars.lab:5000/intel
+#              source: registry.connect.redhat.com/intel      
+#            - mirrors:
+#              - altiostar-registry.cars.lab:5000/redhat
+#              source: registry.redhat.io/redhat
