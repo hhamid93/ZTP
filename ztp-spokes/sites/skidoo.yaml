@@ -29,8 +29,7 @@ spec:
         - cidr: 10.60.0.0/24
         - cidr: fd00:6:6:2051::0/64
       additionalNTPSources:
-        - registry.cars.lab
-        - fd00:6:6:11::52
+        - 10.40.0.100
       nodes:
         - hostName: "super1.skidoo.cars.lab"
           role: master
