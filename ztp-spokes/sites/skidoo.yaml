@@ -24,13 +24,12 @@ spec:
           hostPrefix: 64
       serviceNetwork:
         - 172.30.0.0/16
+        - fd02::/112
       machineNetwork:
         - cidr: 10.60.0.0/24
-      crTemplates:
-        KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
+        - cidr: fd00:6:6:2051::0/64
       additionalNTPSources:
         - 10.40.0.100
-        - registry.cars.lab
       nodes:
         - hostName: "super1.skidoo.cars.lab"
           role: master
@@ -55,14 +54,25 @@ spec:
                     address:
                       - ip: 10.60.0.60
                         prefix-length: 24
+                  ipv6:
+                    enabled: true
+                    address:
+                      - ip: fd00:6:6:2051::60
+                        prefix-length: 64
+                    autoconf: false
+                    dhcp: false
               dns-resolver:
                 config:
                   search:
                     - cars.lab
                   server:
-                    - 10.40.0.100
+                    - registry.cars.lab
+                    - fd00:6:6:11::52
               routes:
                 config:
                   - destination: 0.0.0.0/0
                     next-hop-address: 10.60.0.1
+                    next-hop-interface: enp1s0
+                  - destination: ::/0
+                    next-hop-address: fd00:6:6:2051::1
                     next-hop-interface: enp1s0
