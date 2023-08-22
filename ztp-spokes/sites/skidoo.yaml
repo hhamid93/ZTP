@@ -30,6 +30,8 @@ spec:
         - cidr: fd00:6:6:2051::0/64
       additionalNTPSources:
         - 10.40.0.100
+      crTemplates:
+        KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
       nodes:
         - hostName: "super1.skidoo.cars.lab"
           role: master
