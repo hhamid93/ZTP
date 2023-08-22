@@ -27,7 +27,9 @@ spec:
         - fd02::/112
       machineNetwork:
         - cidr: 10.60.0.0/24
-        - cidr: fd00:6:6:2051::0/64
+        - cidr: fd00:6:6:2051::0/6
+      crTemplates:
+        KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
       additionalNTPSources:
         - 10.40.0.100
         - registry.cars.lab
