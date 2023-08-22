@@ -69,7 +69,7 @@ spec:
                   search:
                     - cars.lab
                   server:
-                    - registry.cars.lab
+                    - 10.40.0.100
                     - fd00:6:6:11::52
               routes:
                 config:
