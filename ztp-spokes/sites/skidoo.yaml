@@ -16,6 +16,7 @@ spec:
       clusterLabels:
         common-du-vse414: "true"
         vseextras: "true"
+        sites : "r740xls"
       networkType: "OVNKubernetes"
       clusterNetwork:
         - cidr: 10.128.0.0/14
@@ -30,8 +31,8 @@ spec:
         - cidr: fd00:6:6:2051::0/64
       additionalNTPSources:
         - 10.40.0.100
-      crTemplates:
-        KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
+      #crTemplates:
+      #  KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
       nodes:
         - hostName: "super1.skidoo.cars.lab"
           role: master
