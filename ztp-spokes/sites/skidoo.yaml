@@ -61,7 +61,7 @@ spec:
                     - cars.lab
                   server:
                     - 10.40.0.100
-                routes:
+              routes:
                 config:
                   - destination: 0.0.0.0/0
                     next-hop-address: 10.60.0.1
