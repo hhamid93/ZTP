@@ -55,8 +55,6 @@ spec:
                     address:
                       - ip: 10.60.0.60
                         prefix-length: 24
-                  ipv6:
-                    enabled: false
               dns-resolver:
                 config:
                   search:
