@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
 - ns.yaml
-- group/common-du-vseextras.yaml
 - common/common-du-vse414.yaml
 
 generators:
