@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
 - ns.yaml
-- common/common-du-vse414.yaml
 
 generators:
 # This is common to all RAN deployments
