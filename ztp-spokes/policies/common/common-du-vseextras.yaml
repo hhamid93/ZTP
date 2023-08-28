@@ -2,7 +2,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
 metadata:
-  name: common-du-vseextras
+  name: policy-vseextras
   namespace: ztp-policy-common
 spec:
   remediationAction: enforce
