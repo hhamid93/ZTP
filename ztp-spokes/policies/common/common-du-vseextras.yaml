@@ -5,9 +5,6 @@ metadata:
   name: common-du-vseextras
   namespace: ztp-policy-common
 spec:
-  bindingRules:
-    # These policies will correspond to all clusters with this label:
-    vseextras: "true"
   remediationAction: enforce
   disabled: false
   policy-templates:
