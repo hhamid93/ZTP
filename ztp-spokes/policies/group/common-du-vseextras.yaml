@@ -29,7 +29,23 @@ spec:
                   sourceType: grpc
                   updateStrategy:
                     registryPoll:
-                      interval: 10m0s                  
+                      interval: 10m0s
+                    object-templates:
+            - complianceType: musthave
+              objectDefinition:
+                apiVersion: operators.coreos.com/v1alpha1
+                kind: CatalogSource
+                metadata:
+                  name: certified-operators
+                  namespace: openshift-marketplace
+                spec:
+                  displayName: Telco 4.14 Certified
+                  image: altiostar-registry.cars.lab:5000/redhat/certified-operator-index:v4.13
+                  publisher: Red Hat
+                  sourceType: grpc
+                  updateStrategy:
+                    registryPoll:
+                      interval: 10m0s
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
