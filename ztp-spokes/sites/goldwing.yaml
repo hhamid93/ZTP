@@ -52,6 +52,8 @@ spec:
                 macAddress: "3c:ec:ef:2d:80:1a"
               - name: eno4
                 macAddress: "3c:ec:ef:2d:80:1b"
+              - name: enp81s0f0
+                macAddress: "50:7c:6f:01:6b:14"
               - name: enp138s0f0
                 macAddress: "b4:96:91:ab:21:98"
             config:
@@ -78,6 +80,9 @@ spec:
                     autoconf: false
                     dhcp: false
                 - name: enp138s0f0
+                  type: ethernet
+                  state: up
+                - name: enp81s0f0
                   type: ethernet
                   state: up
                 - name: eno4
