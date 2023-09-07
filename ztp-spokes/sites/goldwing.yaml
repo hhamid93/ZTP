@@ -16,7 +16,7 @@ spec:
       clusterLabels:
         group-supermicro: ""
         common-du-prega414: "true"
-        #sites: "smcx12"
+        pregaextras: "true"
       networkType: "OVNKubernetes"
       clusterNetwork:
         - cidr: 10.128.0.0/14
