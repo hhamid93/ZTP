@@ -15,7 +15,7 @@ spec:
     - clusterName: "goldwing"
       clusterLabels:
         group-supermicro: ""
-        #common-49: true
+        common-du-prega414: "true"
         #sites: "smcx12"
       networkType: "OVNKubernetes"
       clusterNetwork:
