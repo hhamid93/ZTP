@@ -55,7 +55,7 @@ apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
   name: binding-policy-vseextras2
-  namespace: ztp-common
+  namespace: ztp-policy-common
 placementRef:
   name: placement-policy-vseextras
   kind: PlacementRule
@@ -69,7 +69,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: placement-policy-vseextras2
-  namespace: ztp-common
+  namespace: ztp-policy-common
 spec:
   clusterConditions:
     - status: "True"
