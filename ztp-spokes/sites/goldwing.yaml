@@ -52,10 +52,6 @@ spec:
                 macAddress: "3c:ec:ef:2d:80:1a"
               - name: eno4
                 macAddress: "3c:ec:ef:2d:80:1b"
-              - name: enp25s0f0
-                macAddress: "3c:ec:ef:2d:80:18"
-              - name: enp25s0f1
-                macAddress: "3c:ec:ef:2d:80:19"
               - name: enp138s0f0
                 macAddress: "b4:96:91:ab:21:98"
             config:
