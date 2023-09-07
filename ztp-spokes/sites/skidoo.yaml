@@ -18,6 +18,7 @@ spec:
         vseextras: "true"
         sites : "r740xls"
       networkType: "OVNKubernetes"
+      cpuPartitioningMode: AllNodes
       clusterNetwork:
         - cidr: 10.128.0.0/14
           hostPrefix: 23
@@ -42,7 +43,7 @@ spec:
             name: "skidoo-bmc-creds-secret"
           bootMACAddress: "40:A6:B7:3D:B3:70"
           bootMode: "UEFI"
-          cpuset: "0-3,48-51"
+          #cpuset: "0-3,48-51"  
           nodeNetwork:
             interfaces:
               - name: "enp1s0"
