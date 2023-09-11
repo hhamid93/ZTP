@@ -46,11 +46,17 @@ spec:
           #cpuset: "0-3,48-51"  
           nodeNetwork:
             interfaces:
-              - name: "enp1s0"
+              - name: ens7f0
                 macAddress: "40:A6:B7:3D:B3:70"
+              - name: ens7f1
+                macAddress: "40:a6:b7:3d:b3:71"
+              - name: eno1np0
+                macAddress: "0c:42:a1:f5:2e:18"
+              - name: eno1np1
+                macAddress: "0c:42:a1:f5:2e:19"
             config:
               interfaces:
-                - name: enp1s0
+                - name: ens7f0
                   type: ethernet
                   state: up
                   ipv4:
@@ -65,6 +71,15 @@ spec:
                         prefix-length: 64
                     autoconf: false
                     dhcp: false
+                - name: ens7f1
+                  type: ethernet
+                  state: up
+                - name: eno1np0
+                  type: ethernet
+                  state: up
+                - name: eno1np1
+                  type: ethernet
+                  state: up
               dns-resolver:
                 config:
                   search:
