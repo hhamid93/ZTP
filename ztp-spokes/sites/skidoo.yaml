@@ -91,7 +91,7 @@ spec:
                 config:
                   - destination: 0.0.0.0/0
                     next-hop-address: 10.60.0.1
-                    next-hop-interface: enp1s0
+                    next-hop-interface: ens7f0
                   - destination: ::/0
                     next-hop-address: fd00:6:6:2051::1
-                    next-hop-interface: enp1s0
+                    next-hop-interface: ens7f0
