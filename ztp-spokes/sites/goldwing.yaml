@@ -18,6 +18,7 @@ spec:
         common-du-prega414: "true"
         pregaextras: "true"
       networkType: "OVNKubernetes"
+      cpuPartitioningMode: AllNodes
       clusterNetwork:
         - cidr: 10.128.0.0/14
           hostPrefix: 23
