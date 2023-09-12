@@ -42,7 +42,7 @@ spec:
             name: "goldwing-bmc-creds-secret"
           bootMACAddress: "b4:96:91:ab:21:98"
           bootMode: "UEFI"
-          cpuset: "0-1,32-33"
+          #cpuset: "0-1,32-33"
           nodeNetwork:
             interfaces:
               - name: eno3
