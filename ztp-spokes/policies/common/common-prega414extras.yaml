@@ -60,7 +60,7 @@ placementRef:
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
-  - name: policy-vseextras
+  - name: policy-vseextras2
     kind: Policy
     apiGroup: policy.open-cluster-management.io
 ---
