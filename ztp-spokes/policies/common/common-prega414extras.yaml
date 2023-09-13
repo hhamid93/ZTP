@@ -56,7 +56,7 @@ metadata:
   name: binding-policy-vseextras2
   namespace: ztp-policy-common
 placementRef:
-  name: placement-policy-vseextras
+  name: placement-policy-vseextras2
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
