@@ -16,7 +16,7 @@ spec:
       clusterLabels:
         common-du-vse414: "true"
         vseextras: "true"
-        sites : "r740xls"
+        #sites : "r740xls"
       networkType: "OVNKubernetes"
       cpuPartitioningMode: AllNodes
       clusterNetwork:
