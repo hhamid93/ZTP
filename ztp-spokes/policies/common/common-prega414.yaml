@@ -2,18 +2,18 @@
 apiVersion: ran.openshift.io/v1
 kind: PolicyGenTemplate
 metadata:
-  name: "common-du-prega414"
+  name: "common-du-prega416"
   namespace: "ztp-policy-common"
 spec:
   bindingRules:
     # These policies will correspond to all clusters with this label:
-    common-du-prega414: "true"
+    common-du-prega416: "true"
   sourceFiles:
     # Create operators policies that will be installed in all clusters
     - fileName: SriovSubscription.yaml
       policyName: "subscriptions-policy"
       spec:
-        channel: "4.14"
+        channel: "4.16"
     - fileName: SriovSubscriptionNS.yaml
       policyName: "subscriptions-policy"
     - fileName: SriovSubscriptionOperGroup.yaml
@@ -60,8 +60,8 @@ spec:
       metadata:
         name: redhat-operators
       spec:
-        displayName: Telco 4.14 PreGA
-        image: quay.io/prega/redhat-operator-index:v4.14
+        displayName: Telco 4.16 PreGA
+        image: quay.io/prega/redhat-operator-index:v4.16
         updateStrategy:
             registryPoll:
                 interval: 10m0s
