@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
 - ns.yaml
 - common/common-du-vseextras.yaml
-- common/common-prega414extras.yaml
+- common/common-prega416extras.yaml
 
 generators:
 # This is common to all RAN deployments
