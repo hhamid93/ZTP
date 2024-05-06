@@ -2,7 +2,7 @@
 apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
 metadata:
-  name: policy-vseextras
+  name: policy-vseextras2
   namespace: ztp-policy-common
   annotations:
     policy.open-cluster-management.io/standards: NIST SP 800-53
@@ -53,21 +53,21 @@ spec:
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
-  name: binding-policy-vseextras
+  name: binding-policy-vseextras2
   namespace: ztp-policy-common
 placementRef:
-  name: placement-policy-vseextras
+  name: placement-policy-vseextras2
   kind: PlacementRule
   apiGroup: apps.open-cluster-management.io
 subjects:
-  - name: policy-vseextras
+  - name: policy-vseextras2
     kind: Policy
     apiGroup: policy.open-cluster-management.io
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: placement-policy-vseextras
+  name: placement-policy-vseextras2
   namespace: ztp-policy-common
 spec:
   clusterConditions:
