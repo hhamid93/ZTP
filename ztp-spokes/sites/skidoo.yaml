@@ -15,7 +15,7 @@ spec:
     - clusterName: "skidoo"
       clusterLabels:
         common-du-prega416: "true"
-        #vseextras: "true"
+        vseextras: "true"
         #sites : "r740xls"
       networkType: "OVNKubernetes"
       cpuPartitioningMode: AllNodes
