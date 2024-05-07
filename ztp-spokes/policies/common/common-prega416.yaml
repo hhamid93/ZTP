@@ -78,16 +78,16 @@ spec:
 #        - mirrors:
 #          - brew.registry.redhat.io/openshift-logging
 #          source: registry.redhat.io/openshift-logging
-    - fileName: DisconnectedICSP.yaml
-      policyName: "config-policy"
-      spec:
-        repositoryDigestMirrors:
-        - mirrors:
-          - quay.io/prega/test
-          source: registry-proxy.engineering.redhat.com
-        - mirrors:
-          - quay.io/prega/test/openshift4
-          source: registry.redhat.io/openshift4
-        - mirrors:
-          - quay.io/prega/test/openshift-logging
-          source: registry.redhat.io/openshift-logging
+#    - fileName: DisconnectedICSP.yaml
+#      policyName: "config-policy"
+#      spec:
+#        repositoryDigestMirrors:
+#        - mirrors:
+#          - quay.io/prega/test
+#          source: registry-proxy.engineering.redhat.com
+#        - mirrors:
+#          - quay.io/prega/test/openshift4
+#          source: registry.redhat.io/openshift4
+#        - mirrors:
+#          - quay.io/prega/test/openshift-logging
+#          source: registry.redhat.io/openshift-logging
