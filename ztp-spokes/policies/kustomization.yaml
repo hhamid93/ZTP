@@ -8,10 +8,10 @@ resources:
 
 generators:
 # This is common to all RAN deployments
-#- common/common-du-vseextras.yaml
+#- common/common-prega416.yaml
 #- common/common-prega416extras.yaml
 - common/common-du-vse414.yaml
-- common/common-prega414.yaml
+- common/common-du-vseextras
 
 ## This group policy is for all single-node deployments:
 #- group/vdu.yaml
