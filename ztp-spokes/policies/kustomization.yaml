@@ -4,14 +4,13 @@ kind: Kustomization
 resources:
 - ns.yaml
 - common/common-du-vseextras.yaml
-- common/common-prega416extras.yaml
-
+- common/common-du-vseextras
 generators:
 # This is common to all RAN deployments
 - common/common-prega416.yaml
-- common/common-prega416extras.yaml
+#- common/common-prega416extras.yaml
 #- common/common-du-vse414.yaml
-#- common/common-du-vseextras
+- common/common-du-vseextras
 
 ## This group policy is for all single-node deployments:
 #- group/vdu.yaml
