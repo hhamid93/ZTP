@@ -10,7 +10,7 @@ generators:
 - common/common-prega416.yaml
 #- common/common-prega416extras.yaml
 #- common/common-du-vse414.yaml
-- common/common-du-vseextras.yaml
+#- common/common-du-vseextras.yaml
 
 ## This group policy is for all single-node deployments:
 #- group/vdu.yaml
