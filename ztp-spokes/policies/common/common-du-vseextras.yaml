@@ -27,28 +27,28 @@ spec:
                   name: certified-operators
                   namespace: openshift-marketplace
                 spec:
-                  displayName: Red Hat 4.14 Certified (FEC)
-                  image: altiostar-registry.cars.lab:5000/redhat/certified-operator-index:v4.14
+                  displayName: Red Hat 4.16 Certified (FEC)
+                  image: registry.redhat.io/redhat/sriov-fec-operator:v2.8.0
                   publisher: Red Hat
                   sourceType: grpc
                   updateStrategy:
                     registryPoll:
                       interval: 10m0s
-            - complianceType: musthave
-              objectDefinition:
-                apiVersion: operators.coreos.com/v1alpha1
-                kind: CatalogSource
-                metadata:
-                  name: certified-operators-413
-                  namespace: openshift-marketplace
-                spec:
-                  displayName: Red Hat 4.13 Certified (IEO)
-                  image: altiostar-registry.cars.lab:5000/redhat/certified-operator-index:v4.13
-                  publisher: Red Hat
-                  sourceType: grpc
-                  updateStrategy:
-                    registryPoll:
-                      interval: 10m0s                  
+            #- complianceType: musthave
+            #  objectDefinition:
+            #    apiVersion: operators.coreos.com/v1alpha1
+            #    kind: CatalogSource
+            #    metadata:
+            #      name: certified-operators-413
+            #      namespace: openshift-marketplace
+            #    spec:
+            #      displayName: Red Hat 4.13 Certified (IEO)
+            #      image: altiostar-registry.cars.lab:5000/redhat/certified-operator-index:v4.13
+            #      publisher: Red Hat
+            #      sourceType: grpc
+            #      updateStrategy:
+            #        registryPoll:
+            #          interval: 10m0s                  
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
