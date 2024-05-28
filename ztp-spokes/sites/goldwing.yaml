@@ -14,8 +14,8 @@ spec:
   clusters:
     - clusterName: "goldwing"
       clusterLabels:
-        common-du-prega416: "true"
-        vseextras: "true"
+        #common-du-prega416: "true"
+        #vseextras: "true"
       networkType: "OVNKubernetes"
       cpuPartitioningMode: AllNodes
       clusterNetwork:
