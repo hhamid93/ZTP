@@ -3,16 +3,18 @@ kind: Kustomization
 
 resources:
 - ns.yaml
-- common/common-du-vseextras.yaml
+#- common/common-du-vseextras.yaml
 generators:
 # This is common to all RAN deployments
-- common/common-prega416.yaml
+- common/common-du-ranGen.yaml
+#- common/common-prega416.yaml
 #- common/common-prega416extras.yaml
 #- common/common-du-vse414.yaml
 #- common/common-du-vseextras.yaml
 
 ## This group policy is for all single-node deployments:
-#- group/vdu.yaml
+- group/group-smcx12-vse2-validator.yaml
+- group/group-smcx12-vse2.yaml
 ## This group validator policy is for all single-node deployments:
 #- site/rna4.yaml
 ## These are examples that should be replicated for every individual site:
