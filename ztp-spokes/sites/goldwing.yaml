@@ -15,7 +15,7 @@ spec:
     - clusterName: "goldwing"
       clusterLabels:
         common-du: "true"
-        group-smcx12-vse2: ""
+        #group-smcx12-vse2: ""
         #common-du-prega416: "true"
         #vseextras: "true"
       networkType: "OVNKubernetes"
