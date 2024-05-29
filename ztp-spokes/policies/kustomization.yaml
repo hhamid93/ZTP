@@ -13,8 +13,8 @@ generators:
 #- common/common-du-vseextras.yaml
 
 ## This group policy is for all single-node deployments:
-- group/group-smcx12-vse2-validator.yaml
-- group/group-smcx12-vse2.yaml
+#- group/group-smcx12-vse2-validator.yaml
+#- group/group-smcx12-vse2.yaml
 ## This group validator policy is for all single-node deployments:
 #- site/rna4.yaml
 ## These are examples that should be replicated for every individual site:
